@@ -39,7 +39,7 @@ const SHOP = {
   // Add or remove rows freely. Keep "Other" last.
   areas: [
     { name: "Wuse / Wuse 2",               fee: 2000 },
-    { name: "Garki / Area 1\u201311",           fee: 2000 },
+    { name: "Garki / Area 1-11",           fee: 2000 },
     { name: "Maitama / Asokoro",           fee: 2500 },
     { name: "Jabi / Utako / Jahi",         fee: 2500 },
     { name: "Gwarinpa / Life Camp",        fee: 3000 },
