@@ -1,0 +1,22 @@
+{
+  "name": "Smart Farmers And Food Ltd",
+  "short_name": "Smart Farmers",
+  "description": "Farm produce and foodstuff delivered across Lagos. Garri, beans, rice, palm oil, yam and soup ingredients with verified weight.",
+  "start_url": "/?src=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#FBF8F2",
+  "theme_color": "#0B3D1F",
+  "lang": "en-NG",
+  "categories": ["food", "shopping", "business"],
+  "icons": [
+    { "src": "img/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "img/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "img/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Open the shop", "url": "/#shop" },
+    { "name": "Bulk supply", "url": "/#bulk" }
+  ]
+}
