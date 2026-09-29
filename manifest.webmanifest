@@ -1,7 +1,7 @@
 {
   "name": "Smart Farmers And Food Ltd",
   "short_name": "Smart Farmers",
-  "description": "Farm produce and foodstuff delivered across Lagos. Garri, beans, rice, palm oil, yam and soup ingredients with verified weight.",
+  "description": "Farm produce and foodstuff delivered across Abuja. Garri, beans, rice, palm oil, yam, beef, chicken, fish and soup ingredients with verified weight.",
   "start_url": "/?src=pwa",
   "scope": "/",
   "display": "standalone",

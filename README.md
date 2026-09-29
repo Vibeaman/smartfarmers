@@ -1,6 +1,6 @@
 # Smart Farmers And Food Ltd
 
-Farm produce and foodstuff shop for Lagos — garri, beans, rice, palm oil, yam
+Farm produce and foodstuff shop for Abuja — garri, beans, rice, palm oil, yam, beef, chicken, fish
 and soup ingredients. Customers build a basket and send the whole order to
 WhatsApp in one tap. No backend, no database, no monthly fees.
 
@@ -64,7 +64,7 @@ Copy any block from `{` to `}`, paste it, and edit it.
 ### Change delivery fees or add an area
 ```js
 areas: [
-  { name: "Ikeja / Maryland", fee: 2000 },
+  { name: "Wuse / Wuse 2", fee: 2000 },
 ]
 ```
 
@@ -113,14 +113,14 @@ files instead of the cached ones.
 
 ——————————————
 Items:  ₦56,500
-Delivery (Ikeja / Maryland):  ₦2,000
+Delivery (Wuse / Wuse 2):  ₦2,000
 *TOTAL:  ₦58,500*
 ——————————————
 
 *Name:* Adewale Johnson
 *Phone:* 08031234567
-*Area:* Ikeja / Maryland
-*Address:* 14 Allen Avenue, Ikeja
+*Area:* Wuse / Wuse 2
+*Address:* 14 Aminu Kano Crescent, Wuse 2
 *Note:* Please grind the crayfish
 ```
 
@@ -133,7 +133,7 @@ You never have to ask "what do you want and how much" again.
 **Selling**
 - Basket with per-item measures, saved to the customer's phone
 - One-tap itemised WhatsApp order — no typing
-- Delivery fee by Lagos area, free over a threshold you set
+- Delivery fee by Abuja area, free over a threshold you set
 - Minimum order check
 - "Order the same as last time" for repeat customers
 - Monthly food plans (recurring revenue)
@@ -189,4 +189,4 @@ python3 -m http.server 8000
 
 ---
 
-© Smart Farmers And Food Ltd · Lagos, Nigeria
+© Smart Farmers And Food Ltd · Abuja, Nigeria

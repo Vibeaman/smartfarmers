@@ -19,7 +19,7 @@
 const SHOP = {
   name: "Smart Farmers And Food Ltd",
   shortName: "Smart Farmers",
-  tagline: "Real food. Real weight. Delivered in Lagos.",
+  tagline: "Real food. Real weight. Delivered in Abuja.",
 
   // ---- Contact ----
   whatsapp: "2348074310530",           // digits only, no + or spaces
@@ -30,7 +30,7 @@ const SHOP = {
   twitter: "Samuraiwomanv",
 
   // ---- Business details ----
-  city: "Lagos",
+  city: "Abuja",
   hours: "Mon – Sat, 8:00am – 6:00pm",
   freeDeliveryFrom: 50000,              // free delivery on orders from this amount
   minOrder: 5000,
@@ -38,13 +38,14 @@ const SHOP = {
   // ---- Delivery areas & fees (₦) ----
   // Add or remove rows freely. Keep "Other" last.
   areas: [
-    { name: "Ikeja / Maryland",            fee: 2000 },
-    { name: "Yaba / Surulere / Mushin",    fee: 2000 },
-    { name: "Ikoyi / V.I. / Lekki Ph 1",   fee: 3500 },
-    { name: "Ajah / Sangotedo",            fee: 4500 },
-    { name: "Gbagada / Ketu / Ogudu",      fee: 2500 },
-    { name: "Festac / Amuwo / Apapa",      fee: 3000 },
-    { name: "Ikorodu / Agege / Alimosho",  fee: 3000 },
+    { name: "Wuse / Wuse 2",               fee: 2000 },
+    { name: "Garki / Area 1\u201311",           fee: 2000 },
+    { name: "Maitama / Asokoro",           fee: 2500 },
+    { name: "Jabi / Utako / Jahi",         fee: 2500 },
+    { name: "Gwarinpa / Life Camp",        fee: 3000 },
+    { name: "Lugbe / Airport Road",        fee: 3500 },
+    { name: "Kubwa / Dei-Dei",             fee: 3500 },
+    { name: "Nyanya / Karu / Mararaba",    fee: 4000 },
     { name: "Other (we will confirm)",     fee: 0 }
   ]
 };
@@ -193,6 +194,62 @@ const PRODUCTS = [
       { label: "Paint rubber",          price: 16500 },
       { label: "Paint rubber · ground", price: 17500 }
     ]
+  },
+  {
+    id: "beef",
+    name: "Fresh Beef",
+    category: "Meat & Fish",
+    img: "img/products/beef.webp",
+    blurb: "Fresh red beef, cut to size. Weighed on a scale in front of you.",
+    tags: ["Fresh daily"],
+    stock: true,
+    units: [
+      { label: "1 kg",  price: 5000 },
+      { label: "2 kg",  price: 9800 },
+      { label: "5 kg",  price: 24000 }
+    ]
+  },
+  {
+    id: "goat-meat",
+    name: "Goat Meat",
+    category: "Meat & Fish",
+    img: "img/products/goat-meat.webp",
+    blurb: "Fresh goat meat with bone, cut for pepper soup or stew.",
+    tags: [],
+    stock: true,
+    units: [
+      { label: "1 kg",  price: 6000 },
+      { label: "2 kg",  price: 11800 },
+      { label: "5 kg",  price: 29000 }
+    ]
+  },
+  {
+    id: "chicken",
+    name: "Fresh Chicken",
+    category: "Meat & Fish",
+    img: "img/products/chicken.webp",
+    blurb: "Fresh dressed chicken. Buy a whole bird or by the kilo, cut as you like.",
+    tags: ["Best seller"],
+    stock: true,
+    units: [
+      { label: "1 kg",         price: 4500 },
+      { label: "Whole bird",   price: 8500 },
+      { label: "5 kg",         price: 22000 }
+    ]
+  },
+  {
+    id: "titus-fish",
+    name: "Titus Fish (Frozen)",
+    category: "Meat & Fish",
+    img: "img/products/titus-fish.webp",
+    blurb: "Big Titus (mackerel), well frozen and fresh. Meaty, few bones.",
+    tags: [],
+    stock: true,
+    units: [
+      { label: "1 kg",              price: 4500 },
+      { label: "Half carton · 10kg", price: 42000 },
+      { label: "Full carton · 20kg", price: 82000 }
+    ]
   }
 ];
 
@@ -213,7 +270,7 @@ const PLANS = [
     per: "month",
     note: "Good for 5–8 people",
     popular: true,
-    items: ["2 paint rubbers garri", "1 paint rubber beans", "1 paint rubber rice", "5 litres palm oil", "4 yam tubers", "Crayfish + egusi"]
+    items: ["2 paint rubbers garri", "1 paint rubber beans", "1 paint rubber rice", "5 litres palm oil", "4 yam tubers", "Crayfish + egusi", "5kg chicken or beef"]
   },
   {
     id: "plan-bulk",
@@ -227,10 +284,10 @@ const PLANS = [
 
 /* ---- Customer reviews (edit freely) ---- */
 const REVIEWS = [
-  { name: "Chinwe O.", area: "Lekki",     text: "The garri is properly dry and the weight is real. I have stopped going to the market for garri.", stars: 5 },
-  { name: "Tunde A.",  area: "Ikeja",     text: "Ordered on WhatsApp by 9am, got my beans and palm oil before 4pm same day. Very serious people.", stars: 5 },
-  { name: "Amina S.",  area: "Surulere",  text: "I run a small canteen. They deliver my bags every week and the price does not jump anyhow.", stars: 5 },
-  { name: "Ngozi E.",  area: "Gbagada",   text: "Crayfish had strong aroma and no sand. They ground it for me free of charge.", stars: 5 }
+  { name: "Chinwe O.", area: "Gwarinpa",  text: "The garri is properly dry and the weight is real. I have stopped going to the market for garri.", stars: 5 },
+  { name: "Tunde A.",  area: "Wuse",      text: "Ordered on WhatsApp by 9am, got my beans and palm oil before 4pm same day. Very serious people.", stars: 5 },
+  { name: "Amina S.",  area: "Garki",     text: "I run a small canteen. They deliver my bags and meat every week and the price does not jump anyhow.", stars: 5 },
+  { name: "Ngozi E.",  area: "Kubwa",     text: "The beef and Titus were fresh and well weighed. Crayfish had strong aroma and no sand.", stars: 5 }
 ];
 
 /* ---- Frequently asked questions ---- */
@@ -240,10 +297,10 @@ const FAQS = [
   { q: "Can I pay on delivery?",
     a: "Yes. You can pay on delivery by cash or transfer once you have seen the goods. For bags, kegs and bulk orders we ask for a part payment first so we can buy and load." },
   { q: "How fast is delivery?",
-    a: "Orders confirmed before 12 noon are delivered the same day within Lagos. Anything after that goes out the next morning. Bulk and outside-Lagos orders take 1–3 days." },
+    a: "Orders confirmed before 12 noon are delivered the same day within Abuja. Anything after that goes out the next morning. Bulk and outside-Abuja orders take 1–3 days." },
   { q: "Is the weight complete?",
     a: "Yes. Every paint rubber, derica and bag is weighed before it leaves us. If you weigh it and it is short, we top it up or refund you — no argument." },
-  { q: "Do you deliver outside Lagos?",
+  { q: "Do you deliver outside Abuja?",
     a: "Yes, through transport parks and logistics partners. Message us with your state and what you need and we will confirm the cost before you pay." },
   { q: "Do you supply restaurants and shops?",
     a: "That is a big part of what we do. We supply canteens, restaurants, schools and provision shops weekly or monthly at wholesale prices. Use the bulk supply form and we will send a quote." }
