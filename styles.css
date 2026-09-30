@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════
-   Smart Farmers And Food Ltd — stylesheet
+   Smart Farmers And Food Ltd, stylesheet
    ═══════════════════════════════════════════ */
 
 :root{
@@ -30,7 +30,7 @@ body{
   margin:0;font-family:'Plus Jakarta Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
   color:var(--ink);background:var(--white);line-height:1.6;
   -webkit-font-smoothing:antialiased;
-  /* clip (not hidden) — `hidden` on body makes it a scroll container and
+  /* clip (not hidden), `hidden` on body makes it a scroll container and
      breaks scrollIntoView, anchor links and sticky positioning */
   overflow-x:clip;
 }

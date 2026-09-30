@@ -1,6 +1,6 @@
-/* Smart Farmers — offline shell.
+/* Smart Farmers, offline shell.
    Bump CACHE when you change site files. */
-const CACHE = 'sf-v2';
+const CACHE = 'sf-v3';
 const CORE = [
   './', './index.html', './styles.css', './app.js', './products.js',
   './img/logo.webp', './img/hero.webp', './favicon.ico',

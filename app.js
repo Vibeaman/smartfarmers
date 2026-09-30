@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════
-   Smart Farmers And Food Ltd — app logic
+   Smart Farmers And Food Ltd, app logic
    Cart → WhatsApp order. No backend needed.
    ═══════════════════════════════════════════ */
 (function () {
@@ -285,17 +285,17 @@
     save(KEY.last, JSON.parse(JSON.stringify(cart)));
 
     const L = [];
-    L.push('*NEW ORDER — Smart Farmers*', '');
+    L.push('*NEW ORDER: Smart Farmers*', '');
     cart.forEach((c, i) => {
       const p = findProd(c.id) || {};
       L.push(`${i + 1}. *${p.name || c.id}*`);
       L.push(`    ${c.unit}  ×${c.qty}  =  ${NGN(c.price * c.qty)}`);
     });
-    L.push('', '——————————————');
+    L.push('', '--------------');
     L.push(`Items:  ${NGN(sub)}`);
     L.push(`Delivery (${area.name}):  ${ship === 0 ? (sub >= SHOP.freeDeliveryFrom ? 'Free' : 'to confirm') : NGN(ship)}`);
     L.push(`*TOTAL:  ${NGN(sub + ship)}*`);
-    L.push('——————————————', '');
+    L.push('--------------', '');
     L.push(`*Name:* ${name}`);
     L.push(`*Phone:* ${phone}`);
     L.push(`*Area:* ${area.name}`);
@@ -476,7 +476,7 @@
     document.addEventListener('click', e => {
       const b = e.target.closest('[data-plan]'); if (!b) return;
       const pl = PLANS.find(p => p.name === b.dataset.plan);
-      const L = [`*Monthly food plan — ${pl.name}*`, ''];
+      const L = [`*Monthly food plan: ${pl.name}*`, ''];
       if (pl.price) L.push(`Price: ${NGN(pl.price)} / ${pl.per}`, '');
       L.push('Includes:', ...pl.items.map(i => `• ${i}`), '');
       L.push('Hello Smart Farmers, I would like to start this plan. Please tell me the next step.');
@@ -526,7 +526,7 @@
   function init() {
     // delivery areas
     $('#areaSel').innerHTML = SHOP.areas.map((a, i) =>
-      `<option value="${i}">${esc(a.name)}${a.fee ? ' — ' + NGN(a.fee) : ''}</option>`).join('');
+      `<option value="${i}">${esc(a.name)}${a.fee ? ' - ' + NGN(a.fee) : ''}</option>`).join('');
 
     renderChips(); renderGrid(); renderPlans(); renderReviews();
     renderFaq(); renderProductSchema(); renderFooter();
@@ -536,7 +536,7 @@
     const io = new IntersectionObserver(es => es.forEach(en => {
       if (en.isIntersecting) { en.target.style.opacity = 1; en.target.style.transform = 'none'; io.unobserve(en.target); }
     }), { threshold: .08, rootMargin: '0px 0px -40px' });
-    // Never animate the shop list or its controls — people are trying to tap those.
+    // Never animate the shop list or its controls, people are trying to tap those.
     const SKIP = '#grid, .shop-bar, #empty, .note';
     $$('.sec > .wrap > *, .strip-i').forEach((el, i) => {
       if (window.matchMedia('(prefers-reduced-motion:reduce)').matches) return;

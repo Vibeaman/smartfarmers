@@ -1,6 +1,6 @@
 # Smart Farmers And Food Ltd
 
-Farm produce and foodstuff shop for Abuja — garri, beans, rice, palm oil, yam, beef, chicken, fish
+Farm produce and foodstuff shop for Abuja, garri, beans, rice, palm oil, yam, beef, chicken, fish
 and soup ingredients. Customers build a basket and send the whole order to
 WhatsApp in one tap. No backend, no database, no monthly fees.
 
@@ -10,7 +10,7 @@ WhatsApp in one tap. No backend, no database, no monthly fees.
 
 ## ⚠️ First thing to do: set the real prices
 
-Open **`products.js`**. Every price in there is a **placeholder** — change all of
+Open **`products.js`**. Every price in there is a **placeholder**, change all of
 them to your real selling prices before sharing the site.
 
 ---
@@ -69,7 +69,7 @@ areas: [
 ```
 
 ### Change phone / WhatsApp / email
-Top of the file, in `SHOP`. The WhatsApp number must be **digits only** —
+Top of the file, in `SHOP`. The WhatsApp number must be **digits only** -
 no `+`, no spaces: `2348074310530`.
 
 ### Free delivery threshold
@@ -88,7 +88,7 @@ Set `PLANS = []` to remove the plans section entirely.
 
 1. Edit `products.js`
 2. Commit and push to `main`
-3. Vercel rebuilds automatically — live in about 30 seconds
+3. Vercel rebuilds automatically, live in about 30 seconds
 
 If you edited `styles.css`, `app.js` or `index.html`, also bump the cache
 version in **`sw.js`** (`sf-v1` → `sf-v2`) so returning visitors get the new
@@ -99,23 +99,23 @@ files instead of the cached ones.
 ## What the customer sees
 
 1. Browses the price list, picks a measure (paint rubber, bag, keg, tuber)
-2. Adds to basket — the basket is saved on their phone, so it survives a reload
+2. Adds to basket, the basket is saved on their phone, so it survives a reload
 3. Picks their area, fills name / phone / address
-4. Taps **Send order on WhatsApp** — a full itemised order arrives in your chat:
+4. Taps **Send order on WhatsApp**, a full itemised order arrives in your chat:
 
 ```
-*NEW ORDER — Smart Farmers*
+*NEW ORDER, Smart Farmers*
 
 1. *Ijebu Garri (White)*
     Full bag · 50kg  ×1  =  ₦49,000
 2. *Honey Beans (Oloyin)*
     Paint rubber · 4kg  ×1  =  ₦7,500
 
-——————————————
+--------------
 Items:  ₦56,500
 Delivery (Wuse / Wuse 2):  ₦2,000
 *TOTAL:  ₦58,500*
-——————————————
+--------------
 
 *Name:* Adewale Johnson
 *Phone:* 08031234567
@@ -132,7 +132,7 @@ You never have to ask "what do you want and how much" again.
 
 **Selling**
 - Basket with per-item measures, saved to the customer's phone
-- One-tap itemised WhatsApp order — no typing
+- One-tap itemised WhatsApp order, no typing
 - Delivery fee by Abuja area, free over a threshold you set
 - Minimum order check
 - "Order the same as last time" for repeat customers

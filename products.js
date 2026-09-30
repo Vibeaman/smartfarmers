@@ -1,5 +1,5 @@
 /* ============================================================
-   SMART FARMERS AND FOOD LTD — SHOP SETTINGS
+   SMART FARMERS AND FOOD LTD, SHOP SETTINGS
    ------------------------------------------------------------
    THIS IS THE ONLY FILE YOU NEED TO EDIT.
 
@@ -9,7 +9,7 @@
    To add a new item:        copy any block, change the details
 
    Prices are in Naira (₦). Use plain numbers, no commas.
-   After editing, save the file and push to GitHub —
+   After editing, save the file and push to GitHub -
    Vercel updates the live site in about 30 seconds.
 
    >>> IMPORTANT: THE PRICES BELOW ARE PLACEHOLDERS. <<<
@@ -25,13 +25,13 @@ const SHOP = {
   whatsapp: "2348074310530",           // digits only, no + or spaces
   phone: "+2348074310530",
   email: "smartfarmersandfoodsltd@gmail.com",
-  instagram: "",                        // e.g. "smartfarmersng" — leave "" to hide
+  instagram: "",                        // e.g. "smartfarmersng", leave "" to hide
   facebook: "",                         // leave "" to hide
   twitter: "Samuraiwomanv",
 
   // ---- Business details ----
   city: "Abuja",
-  hours: "Mon – Sat, 8:00am – 6:00pm",
+  hours: "Mon to Sat, 8:00am to 6:00pm",
   freeDeliveryFrom: 50000,              // free delivery on orders from this amount
   minOrder: 5000,
 
@@ -62,7 +62,7 @@ const PRODUCTS = [
     name: "Ijebu Garri (White)",
     category: "Garri & Flour",
     img: "img/products/ijebu-garri.webp",
-    blurb: "Sharp, sour and properly dry. Sieved clean — no sand, no stones.",
+    blurb: "Sharp, sour and properly dry. Sieved clean, no sand, no stones.",
     tags: ["Best seller"],
     stock: true,
     units: [
@@ -253,14 +253,14 @@ const PRODUCTS = [
   }
 ];
 
-/* ---- Monthly food plans (optional — set to [] to hide the section) ---- */
+/* ---- Monthly food plans (optional, set to [] to hide the section) ---- */
 const PLANS = [
   {
     id: "plan-small",
     name: "Small Family",
     price: 55000,
     per: "month",
-    note: "Good for 2–4 people",
+    note: "Good for 2 to 4 people",
     items: ["1 paint rubber garri", "1 paint rubber beans", "1 litre palm oil", "2 yam tubers", "Derica crayfish"]
   },
   {
@@ -268,7 +268,7 @@ const PLANS = [
     name: "Full Family",
     price: 98000,
     per: "month",
-    note: "Good for 5–8 people",
+    note: "Good for 5 to 8 people",
     popular: true,
     items: ["2 paint rubbers garri", "1 paint rubber beans", "1 paint rubber rice", "5 litres palm oil", "4 yam tubers", "Crayfish + egusi", "5kg chicken or beef"]
   },
@@ -285,7 +285,7 @@ const PLANS = [
 /* ---- Customer reviews (edit freely) ---- */
 const REVIEWS = [
   { name: "Chinwe O.", area: "Gwarinpa",  text: "The garri is properly dry and the weight is real. I have stopped going to the market for garri.", stars: 5 },
-  { name: "Tunde A.",  area: "Wuse",      text: "Ordered on WhatsApp by 9am, got my beans and palm oil before 4pm same day. Very serious people.", stars: 5 },
+  { name: "Tunde A.",  area: "Wuse",      text: "Ordered on WhatsApp by 9am, got my beans and palm oil the same afternoon. Very serious people.", stars: 5 },
   { name: "Amina S.",  area: "Garki",     text: "I run a small canteen. They deliver my bags and meat every week and the price does not jump anyhow.", stars: 5 },
   { name: "Ngozi E.",  area: "Kubwa",     text: "The beef and Titus were fresh and well weighed. Crayfish had strong aroma and no sand.", stars: 5 }
 ];
@@ -293,13 +293,13 @@ const REVIEWS = [
 /* ---- Frequently asked questions ---- */
 const FAQS = [
   { q: "How do I place an order?",
-    a: "Add what you want to your basket, pick your area, then tap “Send order on WhatsApp”. Your full list, quantities and total are sent to us automatically — you don’t have to type anything. We reply to confirm." },
+    a: "Add what you want to your basket, pick your area, then tap “Send order on WhatsApp”. Your full list, quantities and total are sent to us automatically, you don’t have to type anything. We reply to confirm." },
   { q: "Can I pay on delivery?",
     a: "Yes. You can pay on delivery by cash or transfer once you have seen the goods. For bags, kegs and bulk orders we ask for a part payment first so we can buy and load." },
   { q: "How fast is delivery?",
-    a: "Orders confirmed before 12 noon are delivered the same day within Abuja. Anything after that goes out the next morning. Bulk and outside-Abuja orders take 1–3 days." },
+    a: "We deliver across Abuja. Message us with your area and we confirm the delivery time before you pay. Bulk and outside-Abuja orders take 1 to 3 days." },
   { q: "Is the weight complete?",
-    a: "Yes. Every paint rubber, derica and bag is weighed before it leaves us. If you weigh it and it is short, we top it up or refund you — no argument." },
+    a: "Yes. Every paint rubber, derica and bag is weighed before it leaves us. If you weigh it and it is short, we top it up or refund you, no argument." },
   { q: "Do you deliver outside Abuja?",
     a: "Yes, through transport parks and logistics partners. Message us with your state and what you need and we will confirm the cost before you pay." },
   { q: "Do you supply restaurants and shops?",
